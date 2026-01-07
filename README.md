@@ -1,4 +1,4 @@
-# ShopEase E-Commerce Site
+# SevenSeas E-Commerce Site
 
 A professional, responsive e-commerce website with dashboard functionality built using HTML, CSS, JavaScript, and Bootstrap.
 

@@ -1,4 +1,4 @@
-/* Custom Styles for ShopEase - Modern Professional Theme */
+/* Custom Styles for SevenSeas - Modern Professional Theme */
 
 :root {
     --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -29,7 +29,8 @@ body {
     background: var(--light-gradient);
     color: var(--text-color);
     overflow-x: hidden;
-    padding-top: 80px; /* Account for fixed navbar */
+    padding-top: 80px;
+    /* Account for fixed navbar */
     animation: fadeInBody 1s ease-in;
 }
 
@@ -38,6 +39,7 @@ body {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -124,6 +126,7 @@ body {
         transform: translateX(-100%);
         opacity: 0;
     }
+
     to {
         transform: translateX(0);
         opacity: 1;
@@ -133,9 +136,6 @@ body {
 .navbar-brand {
     font-weight: 800;
     font-size: 1.8rem;
-    background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-clip: text;
     animation: bounceIn 1s ease-out;
     letter-spacing: -0.5px;
@@ -167,10 +167,8 @@ body {
 }
 
 .navbar-nav .nav-link:hover {
-    background: var(--primary-gradient);
-    color: white !important;
+    color: #705dba !important;
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
 }
 
 .navbar-nav .nav-link::before {
@@ -194,12 +192,15 @@ body {
         transform: scale(0.3);
         opacity: 0;
     }
+
     50% {
         transform: scale(1.05);
     }
+
     70% {
         transform: scale(0.9);
     }
+
     100% {
         transform: scale(1);
         opacity: 1;
@@ -289,6 +290,7 @@ body {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -372,14 +374,16 @@ body {
     background: var(--primary-gradient);
 }
 
-.footer h5, .footer h6 {
+.footer h5,
+.footer h6 {
     color: white;
     font-weight: 700;
     margin-bottom: 1.5rem;
     position: relative;
 }
 
-.footer h5::after, .footer h6::after {
+.footer h5::after,
+.footer h6::after {
     content: '';
     position: absolute;
     bottom: -5px;
@@ -625,6 +629,8 @@ body {
     border-radius: var(--border-radius);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
     transition: var(--transition);
+    margin: 0 auto;
+    display: block;
 }
 
 #about img:hover {
@@ -668,6 +674,7 @@ body {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -783,8 +790,15 @@ body {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .animate-slide-up {
@@ -792,8 +806,15 @@ body {
 }
 
 @keyframes slideUp {
-    from { transform: translateY(50px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .cart-item {
@@ -801,8 +822,15 @@ body {
 }
 
 @keyframes slideInRight {
-    from { transform: translateX(100%); opacity: 0; }
-    to { transform: translateX(0); opacity: 1; }
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .card {
@@ -811,7 +839,7 @@ body {
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsive adjustments */
@@ -826,7 +854,7 @@ body {
     .hero-section .display-4 {
         font-size: 3rem;
     }
-    
+
     .col-lg-3 {
         flex: 0 0 50%;
         max-width: 50%;
@@ -838,16 +866,17 @@ body {
         text-align: center;
         padding: 3rem 0;
     }
-    
+
     .hero-section .display-4 {
         font-size: 2.5rem;
     }
-    
-    .col-lg-3, .col-md-4 {
+
+    .col-lg-3,
+    .col-md-4 {
         flex: 0 0 50%;
         max-width: 50%;
     }
-    
+
     .navbar-brand {
         font-size: 1.25rem;
     }
@@ -857,20 +886,22 @@ body {
     .hero-section .display-4 {
         font-size: 2rem;
     }
-    
-    .col-lg-3, .col-md-4, .col-sm-6 {
+
+    .col-lg-3,
+    .col-md-4,
+    .col-sm-6 {
         flex: 0 0 100%;
         max-width: 100%;
     }
-    
+
     .product-card {
         margin-bottom: 20px;
     }
-    
+
     .card-body {
         padding: 1rem;
     }
-    
+
     .btn {
         width: 100%;
         margin-bottom: 10px;
@@ -890,13 +921,18 @@ body {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
     animation: loading 1.5s infinite;
 }
 
 @keyframes loading {
-    0% { left: -100%; }
-    100% { left: 100%; }
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 100%;
+    }
 }
 
 /* Notification styles */
@@ -908,12 +944,19 @@ body {
     color: white;
     padding: 15px 20px;
     border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     animation: slideInRight 0.3s ease-out;
 }
 
 @keyframes slideInRight {
-    from { transform: translateX(100%); opacity: 0; }
-    to { transform: translateX(0); opacity: 1; }
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
